@@ -555,9 +555,6 @@ def render(lang, cfg, data, assets, base, lang_href, inline=True):
     css, js, logos = assets
     t = dict(texts[lang], _lang=lang)
     booking = (cfg.get("booking_url") or "#fah-request").replace("{lang}", lang)
-    nav = t["nav"]
-    nav_html = "".join(f'<li><a href="#{a}">{e(nav[k])}</a></li>' for a, k in
-                       (("fah-rooms", "rooms"), ("fah-area", "area"), ("fah-hotel", "hotel"), ("fah-request", "request"), ("fah-contacts", "contacts")))
     langs_html = "".join(
         f'<a href="{e(lang_href(l))}" hreflang="{l}" lang="{l}"' + (' aria-current="true"' if l == lang else "")
         + f">{LANG_LABEL[l]}</a>" for l in LANGS)
@@ -584,17 +581,6 @@ def render(lang, cfg, data, assets, base, lang_href, inline=True):
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{fonts}&display=swap">
 {style_tag}
 <div class="fah fah--{lang}" lang="{lang}" id="fah-top" data-fah='{e(json.dumps(root_data, ensure_ascii=False))}' data-phases='{e(json.dumps(dict(t["hero"]["phases"], now=t["hero"]["now"]), ensure_ascii=False))}'>
-<header class="fah-header">
-  <div class="fah-wrap fah-header__row">
-    <a class="fah-header__logo" href="#fah-top">{logos[1]}</a>
-    <nav class="fah-menu" aria-label="{e(t["menu"])}"><ul>{nav_html}</ul><div class="fah-langs fah-langs--menu">{langs_html}</div></nav>
-    <div class="fah-header__end">
-      <div class="fah-langs" role="group" aria-label="{e(t["language"])}">{langs_html}</div>
-      <a class="fah-btn fah-btn--copper fah-header__book" href="{e(booking)}" data-fah-book>{e(t["book"])}</a>
-      <button type="button" class="fah-burger" aria-expanded="false" aria-label="{e(t["menu"])}"><span></span><span></span></button>
-    </div>
-  </div>
-</header>
 <main>
 {section_hero(t, base, lang, logos)}
 {section_rooms(t, rooms, base, lang, booking)}

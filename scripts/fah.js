@@ -9,11 +9,12 @@
   var $$ = function (sel, el) { return Array.prototype.slice.call((el || root).querySelectorAll(sel)); };
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- header ---------- */
+  /* ---------- header (optional: on axis-hotels.com the site's Tilda menu is used instead) ---------- */
   var header = $('.fah-header');
   var hero = $('.fah-hero');
   var lastY = window.scrollY;
   function onScrollHeader() {
+    if (!header) return;
     var y = window.scrollY;
     header.classList.toggle('is-solid', y > 40);
     header.classList.toggle('is-hidden', y > 500 && y > lastY + 4 && !header.classList.contains('is-menu'));
@@ -26,13 +27,14 @@
   var burger = $('.fah-burger');
   var menu = $('.fah-menu');
   function setMenu(open) {
+    if (!burger || !menu) return;
     burger.setAttribute('aria-expanded', open ? 'true' : 'false');
     menu.classList.toggle('is-open', open);
     header.classList.toggle('is-menu', open);
     document.documentElement.style.overflow = open ? 'hidden' : '';
   }
-  burger.addEventListener('click', function () { setMenu(burger.getAttribute('aria-expanded') !== 'true'); });
-  menu.addEventListener('click', function (ev) { if (ev.target.closest('a')) setMenu(false); });
+  if (burger) burger.addEventListener('click', function () { setMenu(burger.getAttribute('aria-expanded') !== 'true'); });
+  if (menu) menu.addEventListener('click', function (ev) { if (ev.target.closest('a')) setMenu(false); });
 
   /* ---------- sky: Bangkok time, draggable sun ---------- */
   var KEYS = [
@@ -81,7 +83,7 @@
     s.setProperty('--city', light ? 'rgba(16,40,67,.88)' : mix('#040A15', a[1], 0.25));
     var fg = light ? '#102843' : '#F7F4EE';
     s.setProperty('--hero-fg', fg);
-    header.style.setProperty('--hero-fg', fg);
+    if (header) header.style.setProperty('--hero-fg', fg);
     hero.setAttribute('data-phase', phaseOf(h));
     hero.setAttribute('data-fg', light ? 'dark' : 'light');
     var hh = Math.floor(h), mm = Math.round((h - hh) * 60);
@@ -416,7 +418,7 @@
   $('.fah-next', box).addEventListener('click', function () { show(pos + 1); });
   box.addEventListener('click', function (ev) { if (ev.target === box) close(); });
   document.addEventListener('keydown', function (ev) {
-    if (ev.key === 'Escape' && menu.classList.contains('is-open')) setMenu(false);
+    if (ev.key === 'Escape' && menu && menu.classList.contains('is-open')) setMenu(false);
     if (box.hidden) return;
     if (ev.key === 'Escape') close();
     else if (ev.key === 'ArrowLeft') show(pos - 1);

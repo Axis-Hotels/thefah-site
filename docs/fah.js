@@ -36,6 +36,22 @@
   if (burger) burger.addEventListener('click', function () { setMenu(burger.getAttribute('aria-expanded') !== 'true'); });
   if (menu) menu.addEventListener('click', function (ev) { if (ev.target.closest('a')) setMenu(false); });
 
+  /* ---------- the site's fixed Tilda menu above the page: keep the hero clear of it ---------- */
+  function measureSiteMenu() {
+    var bottom = 0;
+    Array.prototype.forEach.call(document.querySelectorAll('.tmenu-mobile, .t-menu-base, .t228__maincontainer, .t-menu__wrapper'), function (el) {
+      if (root.contains(el)) return;
+      var st = getComputedStyle(el);
+      if (st.position !== 'fixed' || st.display === 'none' || st.visibility === 'hidden') return;
+      var r = el.getBoundingClientRect();
+      if (r.top <= 1 && r.height > 0 && r.height < 200) bottom = Math.max(bottom, r.bottom);
+    });
+    root.style.setProperty('--site-menu', Math.round(bottom) + 'px');
+  }
+  measureSiteMenu();
+  window.addEventListener('load', measureSiteMenu);
+  window.addEventListener('resize', measureSiteMenu);
+
   /* ---------- sky: Bangkok time, draggable sun ---------- */
   var KEYS = [
     [0, '#060F1E', '#0E2140', '#1B3358'], [4.8, '#0C1830', '#23335C', '#5A5584'], [6, '#3E5F98', '#C98E98', '#F4C49E'],

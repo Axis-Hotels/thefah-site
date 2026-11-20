@@ -1,0 +1,47 @@
+<!-- the Fah by Axis.Bangkok: adds the hotel to the HOTELS submenu on every page that uses the common header.
+     Lives in a T123 block on the Tilda "Header" page. Source: github.com/Axis-Hotels/thefah-site, tilda/header-fah-menu-item.html -->
+<script id="axis-fah-menu-item">
+(function () {
+  var LABEL = 'the Fah by Axis.Bangkok';
+  /* the page's own language first (some menu copies link Chess in another language), then the Chess link's */
+  function langOf(href) {
+    var m = location.pathname.match(/^\/(?:bangkok\/)?(ru|en|th)(?:\/|$)/);
+    if (m) return m[1];
+    m = String(href || '').match(/^(?:https?:\/\/[^\/]+)?\/(?:bangkok\/)?(ru|en|th)(?:\/|$)/);
+    return m ? m[1] : 'ru';
+  }
+  function isChess(a) { return /\/bangkok-chess\/?(?:[?#].*)?$/.test(a.getAttribute('href') || ''); }
+  function add() {
+    /* Tilda menu blocks (T1272 and other ME blocks): one <li> per hotel */
+    Array.prototype.forEach.call(document.querySelectorAll('ul.t-menusub__list'), function (list) {
+      if (list.querySelector('a[href*="/the-fah"]')) return;
+      var chess = Array.prototype.filter.call(list.querySelectorAll('a'), isChess)[0];
+      if (!chess) return;
+      var item = chess.closest('li') || chess;
+      var copy = item.cloneNode(true);
+      var link = copy.tagName === 'A' ? copy : copy.querySelector('a');
+      link.setAttribute('href', '/' + langOf(chess.getAttribute('href')) + '/the-fah');
+      link.textContent = LABEL;
+      link.removeAttribute('aria-current');
+      link.classList.remove('t-active', 't-menu__link-item_active');
+      item.parentNode.insertBefore(copy, item.nextSibling);
+    });
+    /* the script-built fallback menu in the header (#axis-global-nav) */
+    /* its links are rewritten for the page language by other header scripts, so re-check the href on every run */
+    Array.prototype.forEach.call(document.querySelectorAll('#axis-global-nav .axg-sub'), function (sub) {
+      var chess = sub.querySelector('#axg-bkk2') || Array.prototype.filter.call(sub.querySelectorAll('a'), isChess)[0];
+      var a = sub.querySelector('#axg-fah');
+      if (!a) {
+        if (sub.querySelector('a[href*="/the-fah"]')) return;
+        a = document.createElement('a');
+        a.id = 'axg-fah';
+        a.textContent = LABEL;
+        if (chess && chess.nextSibling) sub.insertBefore(a, chess.nextSibling); else sub.appendChild(a);
+      }
+      a.setAttribute('href', '/' + langOf(chess ? chess.getAttribute('href') : '') + '/the-fah');
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', add); else add();
+  window.addEventListener('load', add);
+})();
+</script>

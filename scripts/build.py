@@ -650,8 +650,12 @@ def write_tilda_settings(cfg, texts, asset_base, lds):
     origin = cfg["site_origin"]
     head = "\n".join(
         [f'<link rel="alternate" hreflang="{l}" href="{origin}{cfg["pages"][l]}">' for l in LANGS]
-        + [f'<link rel="alternate" hreflang="x-default" href="{origin}{cfg["pages"]["en"]}">'])
-    names = {"en": "Английская", "ru": "Русская", "th": "Тайская"}
+        + [f'<link rel="alternate" hreflang="x-default" href="{origin}{cfg["pages"]["en"]}">']
+        # the Tilda form block under the T123 block only carries requests to e-mail: keep it off screen
+        # from the first paint (fah.js does the same once it loads, for browsers without :has)
+        + ['<style>.t-rec:has(.fah) ~ .t-rec:has(form.t-form){position:absolute!important;left:-10000px!important;'
+           'top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}</style>'])
+    names ={"en": "Английская", "ru": "Русская", "th": "Тайская"}
     out = ["# Настройки страниц в Тильде", "",
            "Файл собирается автоматически (`python3 scripts/build.py`). Копируйте значения отсюда в «Настройки страницы».", ""]
     for l in LANGS:

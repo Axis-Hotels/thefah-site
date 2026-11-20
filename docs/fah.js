@@ -362,6 +362,7 @@
       if (/@/.test(data.contact)) setField(form, ['Email', 'email'], data.contact);
       else setField(form, ['Phone', 'phone', 'tel'], data.contact);
       setStatus(rq.sending);
+      form.classList.remove('js-send-form-success', 'js-send-form-error');  /* left over from an earlier request */
       var btn = form.querySelector('[type="submit"]');
       if (btn) btn.click(); else form.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
       var tries = 0;
@@ -369,8 +370,11 @@
         tries++;
         var okBox = form.querySelector('.js-successbox'), errBox = form.querySelector('.js-errorbox-all');
         var shown = function (n) { return n && n.offsetParent !== null && getComputedStyle(n).display !== 'none'; };
-        if (shown(okBox)) { clearInterval(poll); setStatus(rq.success, 'ok'); reqForm.reset(); }
-        else if (shown(errBox) || tries > 40) { clearInterval(poll); setStatus(shown(errBox) ? rq.error : rq.success, shown(errBox) ? 'err' : 'ok'); }
+        /* Tilda marks the form js-send-form-success / js-send-form-error once its server answers */
+        var sent = form.classList.contains('js-send-form-success') || shown(okBox);
+        var failed = form.classList.contains('js-send-form-error') || shown(errBox);
+        if (sent) { clearInterval(poll); setStatus(rq.success, 'ok'); reqForm.reset(); }
+        else if (failed || tries > 40) { clearInterval(poll); setStatus(failed ? rq.error : rq.success, failed ? 'err' : 'ok'); }
       }, 250);
       return;
     }

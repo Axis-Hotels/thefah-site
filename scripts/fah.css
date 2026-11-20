@@ -362,6 +362,9 @@
 .fah--th .fah-form legend { letter-spacing: 0; font-size: 15px; }
 .fah-form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .fah-form__row--4 { grid-template-columns: 1fr 1fr .6fr .6fr; }
+/* the form column can be narrow on mid-size screens: two per row once the form itself is under 560px */
+.fah-form { container-type: inline-size; }
+@container (max-width: 560px) { .fah-form__row--4 { grid-template-columns: 1fr 1fr; } }
 .fah-field { position: relative; display: block; }
 .fah-field input, .fah-field textarea { width: 100%; border: 1px solid var(--line); border-radius: 14px; background: var(--ivory); padding: 26px 16px 10px; font-size: 16px; color: var(--navy); outline: none;
   transition: border-color .2s, background .2s; -webkit-appearance: none; appearance: none; min-height: 60px; }

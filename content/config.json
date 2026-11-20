@@ -8,7 +8,7 @@
   "_whatsapp": "Digits only with country code, e.g. 66812345678. Empty = not shown.",
   "line_url": "",
   "email": "love@axis-hotels.com",
-  "asset_base": "",
+  "asset_base": "https://axis-hotels.github.io/thefah-site",
   "_asset_base": "Public address of the docs/ folder on GitHub Pages, without a trailing slash, e.g. https://axis-hotels.github.io/thefah-site. Photos for the Tilda pages load from here.",
   "site_origin": "https://axis-hotels.com",
   "pages": {

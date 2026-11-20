@@ -1,0 +1,29 @@
+{
+  "_comment": "Settings that change without touching the texts. After editing, run: python3 scripts/build.py",
+  "booking_url": "https://axis-hotels.com/{lang}/bangkok/booking?hotel_id=515836",
+  "_booking_url": "Exely booking page shared by all Axis Bangkok hotels; the Fah is hotel_id=515836. {lang} becomes en/ru/th. Empty = Book buttons lead to the request form.",
+  "phone": "+66 97 783 0650",
+  "_phone": "Format: +66 2 123 4567. Empty = not shown.",
+  "whatsapp": "66977830650",
+  "_whatsapp": "Digits only with country code, e.g. 66812345678. Empty = not shown.",
+  "line_url": "",
+  "email": "love@axis-hotels.com",
+  "asset_base": "",
+  "_asset_base": "Public address of the docs/ folder on GitHub Pages, without a trailing slash, e.g. https://axis-hotels.github.io/thefah-site. Photos for the Tilda pages load from here.",
+  "site_origin": "https://axis-hotels.com",
+  "pages": {
+    "en": "/thefah",
+    "ru": "/thefah-ru",
+    "th": "/thefah-th"
+  },
+  "address_line": "128/10–11 Soi Silom 6, Silom Road, Suriya Wong, Bang Rak, Bangkok 10500, Thailand",
+  "map_query": "The FAH Silom, 128/10-11 Soi Silom 6, Bang Rak, Bangkok 10500",
+  "same_as": [],
+  "_same_as": "Links to the hotel's own profiles (Google Maps, Booking, Instagram...). Go into the search markup.",
+  "booking_params": {
+    "checkin": "date",
+    "nights": "nights",
+    "guests": "adults"
+  },
+  "_booking_params": "Exely accepts ?date=YYYY-MM-DD&nights=N&adults=N (checked on axis-hotels.com 20.11.2026)."
+}

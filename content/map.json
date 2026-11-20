@@ -1,0 +1,21 @@
+{
+  "_comment": "Projection of docs/img/silom-map.svg. Change only together with scripts/map_base.py.",
+  "west": 100.519,
+  "east": 100.544,
+  "south": 13.7195,
+  "north": 13.7365,
+  "width": 1000,
+  "height": 695,
+  "hotel": [
+    13.7279866,
+    100.5307883
+  ],
+  "walk_factor": 1.3,
+  "metres_per_minute": 75,
+  "view": [
+    120,
+    160,
+    700,
+    480
+  ]
+}

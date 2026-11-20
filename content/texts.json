@@ -1,0 +1,713 @@
+{
+  "en": {
+    "lang_name": "English",
+    "meta_title": "the Fah by Axis.Bangkok — Boutique Hotel in Silom, Bangkok",
+    "meta_description": "Boutique hotel in Silom, a short walk from BTS Sala Daeng, MRT Si Lom and Patpong. Rooms for two, a penthouse with balcony and family rooms. Book direct.",
+    "nav": {
+      "rooms": "Rooms",
+      "hotel": "Hotel",
+      "area": "Neighbourhood",
+      "request": "Request",
+      "contacts": "Contacts"
+    },
+    "book": "Book",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "hero": {
+      "eyebrow": "Boutique hotel · Silom, Bangkok",
+      "title": "Make more time for Bangkok",
+      "lead": "the Fah by Axis.Bangkok is a small boutique hotel in the heart of Silom. Walk to the street food and evening lights of Patpong Night Market or take a stroll to Lumphini Park. For plans further afield, BTS Sala Daeng and MRT Si Lom are both close by.",
+      "sky": "Sky over Silom",
+      "phases": {
+        "dawn": "dawn",
+        "day": "day",
+        "dusk": "sunset",
+        "night": "night"
+      },
+      "drag": "Drag the sun across the sky",
+      "now": "now",
+      "rooms_btn": "Explore rooms"
+    },
+    "booking": {
+      "checkin": "Check-in",
+      "checkout": "Check-out",
+      "guests": "Guests",
+      "cta": "Check availability",
+      "nights": [
+        "night",
+        "nights"
+      ]
+    },
+    "intro": "Choose a cosy room for two, a penthouse with a kitchen and private balcony, or a family room with two or three bedrooms. Register online before you arrive for contactless check-in.",
+    "numbers": [
+      [
+        "patpong",
+        "to Patpong Night Market"
+      ],
+      [
+        "sala-daeng",
+        "to BTS Sala Daeng"
+      ],
+      [
+        "mrt-silom",
+        "to MRT Si Lom"
+      ],
+      [
+        "lumphini",
+        "to Lumphini Park"
+      ]
+    ],
+    "min": "min",
+    "rooms": {
+      "kicker": "Rooms",
+      "title": "Cosy rooms for one, two or the whole family",
+      "who": "Who's travelling?",
+      "fits": {
+        "solo": "On my own",
+        "couple": "As a couple",
+        "friends": "With a friend or colleague",
+        "family": "With family",
+        "occasion": "For a special occasion"
+      },
+      "match": "Best match",
+      "sqm": "m²",
+      "guests": "up to {n} guests",
+      "size_title": "Floor area to scale",
+      "size_note": "Each outline is drawn to the room's real floor area.",
+      "photos": "photos",
+      "book_room": "Book this room",
+      "amenities_title": "In every room",
+      "amenities": [
+        "Air conditioning",
+        "Free Wi-Fi",
+        "Satellite TV",
+        "Kettle with tea and coffee",
+        "Hairdryer",
+        "In-room safe",
+        "Telephone",
+        "Slippers",
+        "Luggage rack"
+      ],
+      "lead": "Find a cosy room for one, two or the whole family, with the space you need for your stay.",
+      "outlook": "Room outlook",
+      "no_photos": "Photos of this room are coming soon",
+      "bedrooms": [
+        "bedroom",
+        "bedrooms"
+      ],
+      "amenities_note": "Standard Double, Deluxe Twin and Deluxe Double rooms have a minibar or refrigerator. The Penthouse Suite has its own kitchen."
+    },
+    "hotel": {
+      "kicker": "The hotel",
+      "title": "Amenities and stay information",
+      "lead": "The hotel offers luggage storage, security staff and CCTV. There’s free Wi-Fi in the lobby, and our team can recommend places to eat and things to see in Bangkok. All rooms are smoke-free. A designated smoking area is available.",
+      "facts": [
+        [
+          "3:00 pm",
+          "Check-in from"
+        ],
+        [
+          "Noon",
+          "Check-out by"
+        ],
+        [
+          "Under 3",
+          "Children stay free"
+        ],
+        [
+          "THB 300",
+          "Parking per space per day, advance reservation required"
+        ]
+      ],
+      "online": "Register online before you arrive for contactless check-in. Everything is contactless, and our team is always in touch."
+    },
+    "area": {
+      "kicker": "Silom",
+      "title": "Silom on foot and by train",
+      "lead": "Patpong, Thaniya and Lumphini Park are all within a {max}-minute walk. BTS Sala Daeng and MRT Si Lom take you to the rest of Bangkok.",
+      "filters": {
+        "all": "All",
+        "transit": "Transit",
+        "night": "Night out",
+        "food": "Food",
+        "sight": "Sights",
+        "shop": "Shopping"
+      },
+      "rings": "5, 10 and 15 minutes on foot",
+      "approx": "Walking times are approximate.",
+      "hotel": "the Fah",
+      "map_alt": "Map of Silom around the Fah",
+      "mode_walk": "On foot",
+      "mode_transit": "By BTS & MRT"
+    },
+    "transit": {
+      "kicker": "Further afield",
+      "title": "Where the BTS and MRT take you",
+      "lead": "Choose a destination to see the route from our door.",
+      "walk": "Walk to",
+      "stops": [
+        "stop",
+        "stops"
+      ],
+      "change": "Change",
+      "boat": "Boat",
+      "arrive": "Arrive",
+      "total": "about {n} min door to door",
+      "from": "From the Fah"
+    },
+    "request": {
+      "kicker": "Individual request",
+      "title": "Long stay, group or a special occasion?",
+      "lead": "Tell us what you are planning. Our team will reply with options and a personal rate.",
+      "types": {
+        "long": "Long stay",
+        "group": "Group",
+        "business": "Business trip",
+        "occasion": "Special occasion",
+        "other": "Something else"
+      },
+      "type_label": "What's it about?",
+      "name": "Your name",
+      "contact": "Email, WhatsApp or phone",
+      "checkin": "Check-in",
+      "checkout": "Check-out",
+      "guests": "Guests",
+      "rooms": "Rooms",
+      "message": "Anything we should know",
+      "message_ph": "Number of rooms, arrival time, a birthday cake for the suite…",
+      "consent": "By sending the request you agree that we use these details to reply to you.",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "success": "Thank you! We've received your request and will reply soon.",
+      "error": "Something went wrong. Please write to us directly using the contacts below.",
+      "required": "Please fill in your name and a way to contact you.",
+      "preview": "Preview: the form is not connected yet, so nothing was sent."
+    },
+    "contacts": {
+      "kicker": "Contacts",
+      "title": "See you under the Bangkok sky",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "line": "LINE",
+      "taxi": "For the taxi driver",
+      "directions": "Open in Google Maps",
+      "lead": "Need help choosing a room, checking your booking details or planning your arrival? We’re happy to help.",
+      "whatsapp_btn": "Message us on WhatsApp",
+      "address_text": "128/10–11 Soi Silom 6, Silom Road, Suriya Wong, Bang Rak, Bangkok 10500, Thailand"
+    },
+    "gallery": {
+      "prev": "Previous photo",
+      "next": "Next photo",
+      "open": "Open photo",
+      "of": "of"
+    },
+    "footer": "Part of Axis Hotels.",
+    "photos": {
+      "hotel-entrance": "Entrance of the Fah boutique hotel in Silom",
+      "hotel-reception": "Lobby in warm light",
+      "hotel-lounge": "Lounge with green banquettes",
+      "hotel-gallery": "Lobby gallery with orchids",
+      "hotel-chandelier": "Lobby with golden chandelier",
+      "hotel-lift": "Lift hall and staircase",
+      "hotel-facade": "Facade of the Fah hotel on Soi Silom 6, Bangkok",
+      "hotel-lounge-sofa": "Lounge with long sofa",
+      "suite-bedroom": "Penthouse Suite bedroom at the Fah, Silom",
+      "suite-living": "Penthouse Suite living area by the large window",
+      "suite-living-2": "Penthouse Suite sofa area",
+      "suite-bathroom": "Penthouse Suite bathroom",
+      "suite-bath": "Penthouse Suite bathtub and shower",
+      "king-red": "Deluxe Double room at the Fah boutique hotel in Silom, Bangkok",
+      "king-charcoal": "Deluxe Double with charcoal curtains",
+      "king-reverse": "Deluxe Double, view to the door",
+      "king-bed": "190 cm double bed in the Deluxe Double",
+      "king-bathroom": "Deluxe Double bathroom",
+      "twin-main": "Deluxe Twin with two single beds",
+      "twin-beds": "Two 110 cm single beds in the Deluxe Twin",
+      "twin-beds-2": "Deluxe Twin, another angle",
+      "twin-tv": "Deluxe Twin TV and mirror",
+      "twin-bathroom": "Deluxe Twin bathroom",
+      "cozy-bed": "Standard Double with a 160 cm double bed",
+      "cozy-bed-2": "Standard Double, another angle",
+      "cozy-window": "Standard Double curtains and TV",
+      "cozy-bathroom": "Standard Double bathroom"
+    }
+  },
+  "ru": {
+    "lang_name": "Русский",
+    "meta_title": "the Fah by Axis.Bangkok — бутик-отель в Силоме, Бангкок",
+    "meta_description": "Бутик-отель в Силоме, Бангкок: рядом BTS Sala Daeng, MRT Si Lom и Патпонг. Номера на двоих, пентхаус с балконом и семейные номера. Бронируйте напрямую.",
+    "nav": {
+      "rooms": "Номера",
+      "hotel": "Отель",
+      "area": "Район",
+      "request": "Запрос",
+      "contacts": "Контакты"
+    },
+    "book": "Забронировать",
+    "menu": "Меню",
+    "close": "Закрыть",
+    "language": "Язык",
+    "hero": {
+      "eyebrow": "Бутик-отель · Силом, Бангкок",
+      "title": "Оставьте больше времени Бангкоку",
+      "lead": "the Fah by Axis.Bangkok — небольшой бутик-отель в сердце Силома. За несколько минут можно дойти до уличной еды и вечерних огней Патпонга, до парка Люмпини — прогуляться пешком. А когда планы ведут в другой район, рядом станции BTS Sala Daeng и MRT Si Lom.",
+      "sky": "Небо над Силомом",
+      "phases": {
+        "dawn": "рассвет",
+        "day": "день",
+        "dusk": "закат",
+        "night": "ночь"
+      },
+      "drag": "Перетащите солнце по небу",
+      "now": "сейчас",
+      "rooms_btn": "Выбрать номер"
+    },
+    "booking": {
+      "checkin": "Заезд",
+      "checkout": "Выезд",
+      "guests": "Гости",
+      "cta": "Проверить даты",
+      "nights": [
+        "ночь",
+        "ночи",
+        "ночей"
+      ]
+    },
+    "intro": "Выберите уютный номер на двоих, пентхаус с кухней и собственным балконом или семейный номер с двумя или тремя спальнями. Пройдите онлайн-регистрацию до приезда и заселяйтесь бесконтактно.",
+    "numbers": [
+      [
+        "patpong",
+        "до ночного рынка Патпонг"
+      ],
+      [
+        "sala-daeng",
+        "до BTS Sala Daeng"
+      ],
+      [
+        "mrt-silom",
+        "до MRT Si Lom"
+      ],
+      [
+        "lumphini",
+        "до парка Люмпини"
+      ]
+    ],
+    "min": "мин",
+    "rooms": {
+      "kicker": "Номера",
+      "title": "Уютные номера для одного, двоих и всей семьи",
+      "who": "Кто едет?",
+      "fits": {
+        "solo": "Один",
+        "couple": "Вдвоём",
+        "friends": "С другом или коллегой",
+        "family": "С семьёй",
+        "occasion": "По особому поводу"
+      },
+      "match": "Подходит лучше всего",
+      "sqm": "м²",
+      "guests": "до {n} гостей",
+      "size_title": "Площадь в масштабе",
+      "size_note": "Каждый контур нарисован по реальной площади номера.",
+      "photos": "фото",
+      "book_room": "Забронировать номер",
+      "amenities_title": "В каждом номере",
+      "amenities": [
+        "Кондиционер",
+        "Бесплатный Wi-Fi",
+        "Спутниковое ТВ",
+        "Чайник с чаем и кофе",
+        "Фен",
+        "Сейф",
+        "Телефон",
+        "Тапочки",
+        "Подставка для багажа"
+      ],
+      "lead": "Уютные номера для одного, двоих и всей семьи. Выберите, сколько пространства нужно для вашей поездки.",
+      "outlook": "Расположение",
+      "no_photos": "Фото этого номера скоро появятся",
+      "bedrooms": [
+        "спальня",
+        "спальни",
+        "спален"
+      ],
+      "amenities_note": "В номерах Standard Double, Deluxe Twin и Deluxe Double есть мини-бар или холодильник. В Penthouse Suite есть собственная кухня."
+    },
+    "hotel": {
+      "kicker": "Отель",
+      "title": "Удобства и условия",
+      "lead": "В отеле доступны хранение багажа, охрана и видеонаблюдение. В лобби работает бесплатный Wi-Fi. Команда отеля подскажет, где поужинать и что посмотреть в Бангкоке. Все номера для некурящих. Для курения предусмотрено отдельное место.",
+      "facts": [
+        [
+          "15:00",
+          "Заезд с"
+        ],
+        [
+          "12:00",
+          "Выезд до"
+        ],
+        [
+          "До 3 лет",
+          "Дети проживают бесплатно"
+        ],
+        [
+          "300 ฿",
+          "Парковка за место в сутки, бронируется заранее"
+        ]
+      ],
+      "online": "Заполните онлайн-регистрацию до приезда, чтобы заселиться бесконтактно. У нас всё бесконтактно, но команда всегда на связи."
+    },
+    "area": {
+      "kicker": "Силом",
+      "title": "Силом пешком и на метро",
+      "lead": "Патпонг, Танийя и парк Люмпини — не дальше {max} минут пешком. Станции BTS Sala Daeng и MRT Si Lom довезут в любой район Бангкока.",
+      "filters": {
+        "all": "Всё",
+        "transit": "Транспорт",
+        "night": "Вечером",
+        "food": "Еда",
+        "sight": "Посмотреть",
+        "shop": "Шопинг"
+      },
+      "rings": "5, 10 и 15 минут пешком",
+      "approx": "Время пешком примерное.",
+      "hotel": "the Fah",
+      "map_alt": "Карта Силома вокруг отеля the Fah",
+      "mode_walk": "Пешком",
+      "mode_transit": "На BTS и MRT"
+    },
+    "transit": {
+      "kicker": "Дальше",
+      "title": "Куда довезут BTS и MRT",
+      "lead": "Выберите, куда хотите поехать, — покажем маршрут от дверей отеля.",
+      "walk": "Пешком до",
+      "stops": [
+        "остановка",
+        "остановки",
+        "остановок"
+      ],
+      "change": "Пересадка",
+      "boat": "Лодка",
+      "arrive": "Вы на месте",
+      "total": "около {n} мин от двери до двери",
+      "from": "От the Fah"
+    },
+    "request": {
+      "kicker": "Индивидуальный запрос",
+      "title": "Долгое проживание, группа или особый повод?",
+      "lead": "Расскажите, что планируете. Наша команда ответит с вариантами и персональной ценой.",
+      "types": {
+        "long": "Долгое проживание",
+        "group": "Группа",
+        "business": "Командировка",
+        "occasion": "Особый повод",
+        "other": "Другое"
+      },
+      "type_label": "О чём запрос?",
+      "name": "Ваше имя",
+      "contact": "Почта, WhatsApp или телефон",
+      "checkin": "Заезд",
+      "checkout": "Выезд",
+      "guests": "Гости",
+      "rooms": "Номера",
+      "message": "Что нам важно знать",
+      "message_ph": "Сколько номеров, во сколько приезжаете, торт в люкс на день рождения…",
+      "consent": "Отправляя запрос, вы соглашаетесь, что мы используем эти данные, чтобы вам ответить.",
+      "submit": "Отправить запрос",
+      "sending": "Отправляем…",
+      "success": "Спасибо! Запрос получен, скоро ответим.",
+      "error": "Что-то пошло не так. Напишите нам напрямую — контакты ниже.",
+      "required": "Укажите имя и способ связи.",
+      "preview": "Превью: форма ещё не подключена, поэтому запрос никуда не отправлен."
+    },
+    "contacts": {
+      "kicker": "Контакты",
+      "title": "До встречи под небом Бангкока",
+      "address": "Адрес",
+      "phone": "Телефон",
+      "email": "Почта",
+      "whatsapp": "WhatsApp",
+      "line": "LINE",
+      "taxi": "Для таксиста",
+      "directions": "Открыть в Google Картах",
+      "lead": "Поможем выбрать номер, уточнить детали бронирования или подготовиться к заезду.",
+      "whatsapp_btn": "Написать в WhatsApp",
+      "address_text": "128/10–11 Soi Silom 6, Silom Road, Suriya Wong, Bang Rak, Bangkok 10500, Thailand"
+    },
+    "gallery": {
+      "prev": "Предыдущее фото",
+      "next": "Следующее фото",
+      "open": "Открыть фото",
+      "of": "из"
+    },
+    "footer": "Входит в сеть Axis Hotels.",
+    "photos": {
+      "hotel-entrance": "Вход в бутик-отель the Fah на Силоме",
+      "hotel-reception": "Лобби в тёплом свете",
+      "hotel-lounge": "Лаунж с зелёными диванами",
+      "hotel-gallery": "Галерея в лобби с орхидеями",
+      "hotel-chandelier": "Лобби с золотой люстрой",
+      "hotel-lift": "Лифтовой холл и лестница",
+      "hotel-facade": "Фасад отеля the Fah на Soi Silom 6, Бангкок",
+      "hotel-lounge-sofa": "Лаунж с длинным диваном",
+      "suite-bedroom": "Спальня Penthouse Suite в отеле the Fah, Силом",
+      "suite-living": "Гостиная Penthouse Suite у большого окна",
+      "suite-living-2": "Диван в Penthouse Suite",
+      "suite-bathroom": "Ванная комната Penthouse Suite",
+      "suite-bath": "Ванна и душ в Penthouse Suite",
+      "king-red": "Номер Deluxe Double в бутик-отеле the Fah на Силоме, Бангкок",
+      "king-charcoal": "Deluxe Double с графитовыми шторами",
+      "king-reverse": "Deluxe Double, вид на дверь",
+      "king-bed": "Двуспальная кровать 190 см в Deluxe Double",
+      "king-bathroom": "Ванная комната в Deluxe Double",
+      "twin-main": "Deluxe Twin с двумя кроватями",
+      "twin-beds": "Две односпальные кровати по 110 см в Deluxe Twin",
+      "twin-beds-2": "Deluxe Twin, другой ракурс",
+      "twin-tv": "Телевизор и зеркало в Deluxe Twin",
+      "twin-bathroom": "Ванная комната в Deluxe Twin",
+      "cozy-bed": "Standard Double с кроватью 160 см",
+      "cozy-bed-2": "Standard Double, другой ракурс",
+      "cozy-window": "Шторы и телевизор в Standard Double",
+      "cozy-bathroom": "Ванная комната в Standard Double"
+    }
+  },
+  "th": {
+    "lang_name": "ไทย",
+    "meta_title": "the Fah by Axis.Bangkok — โรงแรมบูติกสีลม ใกล้ BTS ศาลาแดง",
+    "meta_description": "ที่พักย่านสีลม เดินไม่กี่นาทีถึง BTS ศาลาแดง MRT สีลม และตลาดกลางคืนพัฒน์พงศ์ ห้องพักสำหรับสองท่าน เพนต์เฮาส์พร้อมระเบียง และห้องครอบครัว จองตรงกับโรงแรม",
+    "nav": {
+      "rooms": "ห้องพัก",
+      "hotel": "โรงแรม",
+      "area": "ย่านสีลม",
+      "request": "ขอใบเสนอราคา",
+      "contacts": "ติดต่อ"
+    },
+    "book": "จองห้องพัก",
+    "menu": "เมนู",
+    "close": "ปิด",
+    "language": "ภาษา",
+    "hero": {
+      "eyebrow": "โรงแรมบูติก · สีลม กรุงเทพฯ",
+      "title": "เที่ยวกรุงเทพฯ ให้เต็มที่จากใจกลางสีลม",
+      "lead": "the Fah by Axis.Bangkok คือโรงแรมบูติกขนาดเล็กใจกลางสีลม เดินไปชิมสตรีทฟู้ดและสัมผัสบรรยากาศยามค่ำที่ตลาดกลางคืนพัฒน์พงศ์ หรือเดินเล่นที่สวนลุมพินีได้สะดวก หากมีนัดหรืออยากไปเที่ยวย่านอื่น ก็เดินทางต่อได้จาก BTS ศาลาแดงหรือ MRT สีลม",
+      "sky": "ฟ้าเหนือสีลม",
+      "phases": {
+        "dawn": "รุ่งเช้า",
+        "day": "กลางวัน",
+        "dusk": "พระอาทิตย์ตก",
+        "night": "กลางคืน"
+      },
+      "drag": "ลากดวงอาทิตย์เพื่อเปลี่ยนสีฟ้า",
+      "now": "ตอนนี้",
+      "rooms_btn": "เลือกห้องพัก"
+    },
+    "booking": {
+      "checkin": "เช็คอิน",
+      "checkout": "เช็คเอาท์",
+      "guests": "ผู้เข้าพัก",
+      "cta": "ตรวจสอบห้องว่าง",
+      "nights": [
+        "คืน",
+        "คืน"
+      ]
+    },
+    "intro": "เลือกห้องพักสบาย ๆ สำหรับสองท่าน ห้องเพนต์เฮาส์พร้อมครัวและระเบียงส่วนตัว หรือห้องพักสำหรับครอบครัวแบบ 2 หรือ 3 ห้องนอน ลงทะเบียนออนไลน์ล่วงหน้าเพื่อเช็กอินแบบไร้สัมผัส",
+    "numbers": [
+      [
+        "patpong",
+        "ถึงตลาดกลางคืนพัฒน์พงศ์"
+      ],
+      [
+        "sala-daeng",
+        "ถึง BTS ศาลาแดง"
+      ],
+      [
+        "mrt-silom",
+        "ถึง MRT สีลม"
+      ],
+      [
+        "lumphini",
+        "ถึงสวนลุมพินี"
+      ]
+    ],
+    "min": "นาที",
+    "rooms": {
+      "kicker": "ห้องพัก",
+      "title": "ห้องพักสบาย ๆ สำหรับคนเดียว สองคน หรือทั้งครอบครัว",
+      "who": "เดินทางกับใคร?",
+      "fits": {
+        "solo": "คนเดียว",
+        "couple": "คู่รัก",
+        "friends": "เพื่อนหรือเพื่อนร่วมงาน",
+        "family": "ครอบครัว",
+        "occasion": "โอกาสพิเศษ"
+      },
+      "match": "เหมาะที่สุด",
+      "sqm": "ตร.ม.",
+      "guests": "สูงสุด {n} ท่าน",
+      "size_title": "ขนาดห้องตามสัดส่วนจริง",
+      "size_note": "กรอบแต่ละห้องวาดตามพื้นที่จริง",
+      "photos": "รูป",
+      "book_room": "จองห้องนี้",
+      "amenities_title": "ในทุกห้องพัก",
+      "amenities": [
+        "เครื่องปรับอากาศ",
+        "Wi-Fi ฟรี",
+        "ทีวีพร้อมช่องดาวเทียม",
+        "กาต้มน้ำพร้อมชาและกาแฟ",
+        "ไดร์เป่าผม",
+        "ตู้เซฟ",
+        "โทรศัพท์",
+        "รองเท้าแตะ",
+        "ที่วางกระเป๋าเดินทาง"
+      ],
+      "lead": "เลือกห้องพักสบาย ๆ ให้เหมาะกับทริป ไม่ว่าจะมาคนเดียว มาสองคน หรือเดินทางกันทั้งครอบครัว",
+      "outlook": "ตำแหน่งห้องและวิว",
+      "no_photos": "รูปห้องพักนี้จะมาเร็ว ๆ นี้",
+      "bedrooms": [
+        "ห้องนอน",
+        "ห้องนอน"
+      ],
+      "amenities_note": "ห้อง Standard Double, Deluxe Twin และ Deluxe Double มีมินิบาร์หรือตู้เย็น ส่วน Penthouse Suite มีครัวส่วนตัว"
+    },
+    "hotel": {
+      "kicker": "โรงแรม",
+      "title": "สิ่งอำนวยความสะดวกและเงื่อนไขการเข้าพัก",
+      "lead": "โรงแรมมีบริการรับฝากสัมภาระ เจ้าหน้าที่รักษาความปลอดภัย และกล้องวงจรปิด พร้อม Wi-Fi ฟรีในล็อบบี้ สอบถามทีมงานของเราได้หากต้องการคำแนะนำเกี่ยวกับร้านอาหารหรือสถานที่เที่ยวในกรุงเทพฯ ห้องพักทุกห้องปลอดบุหรี่ และมีพื้นที่สูบบุหรี่ที่จัดไว้โดยเฉพาะ",
+      "facts": [
+        [
+          "15:00 น.",
+          "เช็กอินได้ตั้งแต่"
+        ],
+        [
+          "12:00 น.",
+          "เช็กเอาต์ภายใน"
+        ],
+        [
+          "ต่ำกว่า 3 ปี",
+          "เด็กเข้าพักฟรี"
+        ],
+        [
+          "300 บาท",
+          "ค่าจอดรถต่อคันต่อวัน ต้องจองล่วงหน้า"
+        ]
+      ],
+      "online": "ลงทะเบียนออนไลน์ล่วงหน้าเพื่อเช็กอินแบบไร้สัมผัส ทุกอย่างเป็นแบบไร้สัมผัส และทีมงานของเราพร้อมติดต่อเสมอ"
+    },
+    "area": {
+      "kicker": "สีลม",
+      "title": "สีลม เดินเท้าและรถไฟฟ้า",
+      "lead": "พัฒน์พงศ์ ธนิยะ และสวนลุมพินี เดินไม่เกิน {max} นาที ส่วน BTS ศาลาแดงและ MRT สีลม พาคุณไปได้ทั่วกรุงเทพฯ",
+      "filters": {
+        "all": "ทั้งหมด",
+        "transit": "การเดินทาง",
+        "night": "ยามค่ำ",
+        "food": "อาหาร",
+        "sight": "ที่เที่ยว",
+        "shop": "ช้อปปิ้ง"
+      },
+      "rings": "เดิน 5, 10 และ 15 นาที",
+      "approx": "เวลาเดินเป็นค่าโดยประมาณ",
+      "hotel": "the Fah",
+      "map_alt": "แผนที่ย่านสีลมรอบโรงแรม the Fah",
+      "mode_walk": "เดินเท้า",
+      "mode_transit": "BTS และ MRT"
+    },
+    "transit": {
+      "kicker": "ไปไกลกว่านั้น",
+      "title": "BTS และ MRT พาคุณไปที่ไหนได้บ้าง",
+      "lead": "เลือกจุดหมาย แล้วดูเส้นทางจากหน้าโรงแรม",
+      "walk": "เดินไป",
+      "stops": [
+        "สถานี",
+        "สถานี"
+      ],
+      "change": "เปลี่ยนสาย",
+      "boat": "เรือ",
+      "arrive": "ถึงแล้ว",
+      "total": "ประมาณ {n} นาทีจากโรงแรม",
+      "from": "จาก the Fah"
+    },
+    "request": {
+      "kicker": "คำขอพิเศษ",
+      "title": "พักยาว มาเป็นกลุ่ม หรือมีโอกาสพิเศษ?",
+      "lead": "เล่าให้เราฟังว่าคุณวางแผนอะไรไว้ ทีมงานของเราจะตอบกลับพร้อมตัวเลือกและราคาพิเศษสำหรับคุณ",
+      "types": {
+        "long": "พักระยะยาว",
+        "group": "กรุ๊ป",
+        "business": "เดินทางเพื่อธุรกิจ",
+        "occasion": "โอกาสพิเศษ",
+        "other": "อื่น ๆ"
+      },
+      "type_label": "เรื่องที่ต้องการสอบถาม",
+      "name": "ชื่อของคุณ",
+      "contact": "อีเมล WhatsApp หรือเบอร์โทร",
+      "checkin": "เช็คอิน",
+      "checkout": "เช็คเอาท์",
+      "guests": "ผู้เข้าพัก",
+      "rooms": "จำนวนห้อง",
+      "message": "รายละเอียดเพิ่มเติม",
+      "message_ph": "จำนวนห้อง เวลาเดินทางมาถึง เค้กวันเกิดในห้องสวีท…",
+      "consent": "การส่งคำขอถือว่าคุณยินยอมให้เราใช้ข้อมูลนี้เพื่อติดต่อกลับ",
+      "submit": "ส่งคำขอ",
+      "sending": "กำลังส่ง…",
+      "success": "ขอบคุณ! เราได้รับคำขอแล้วและจะติดต่อกลับเร็ว ๆ นี้",
+      "error": "เกิดข้อผิดพลาด กรุณาติดต่อเราโดยตรงตามช่องทางด้านล่าง",
+      "required": "กรุณากรอกชื่อและช่องทางติดต่อ",
+      "preview": "ตัวอย่าง: แบบฟอร์มยังไม่ได้เชื่อมต่อ คำขอจึงยังไม่ถูกส่ง"
+    },
+    "contacts": {
+      "kicker": "ติดต่อเรา",
+      "title": "แล้วพบกันใต้ฟ้ากรุงเทพฯ",
+      "address": "ที่อยู่",
+      "phone": "โทรศัพท์",
+      "email": "อีเมล",
+      "whatsapp": "WhatsApp",
+      "line": "LINE",
+      "taxi": "สำหรับแท็กซี่",
+      "directions": "เปิดใน Google Maps",
+      "lead": "หากต้องการคำแนะนำในการเลือกห้องพัก สอบถามรายละเอียดการจอง หรือวางแผนการเช็กอิน เรายินดีช่วยเหลือ",
+      "whatsapp_btn": "ส่งข้อความทาง WhatsApp",
+      "address_text": "128/10–11 ซอยสีลม 6 ถนนสีลม แขวงสุริยวงศ์ เขตบางรัก กรุงเทพมหานคร 10500 ประเทศไทย"
+    },
+    "gallery": {
+      "prev": "รูปก่อนหน้า",
+      "next": "รูปถัดไป",
+      "open": "เปิดรูป",
+      "of": "จาก"
+    },
+    "footer": "ส่วนหนึ่งของ Axis Hotels",
+    "photos": {
+      "hotel-entrance": "ทางเข้าโรงแรมบูติก the Fah สีลม",
+      "hotel-reception": "ล็อบบี้ในแสงไฟอบอุ่น",
+      "hotel-lounge": "เลานจ์โซฟาสีเขียว",
+      "hotel-gallery": "ล็อบบี้ประดับกล้วยไม้",
+      "hotel-chandelier": "ล็อบบี้พร้อมโคมไฟระย้าสีทอง",
+      "hotel-lift": "โถงลิฟต์และบันได",
+      "hotel-facade": "ด้านหน้าโรงแรม the Fah ซอยสีลม 6 กรุงเทพฯ",
+      "hotel-lounge-sofa": "เลานจ์พร้อมโซฟายาว",
+      "suite-bedroom": "ห้องนอน Penthouse Suite ที่ the Fah สีลม",
+      "suite-living": "มุมนั่งเล่น Penthouse Suite ริมหน้าต่างบานใหญ่",
+      "suite-living-2": "โซฟาใน Penthouse Suite",
+      "suite-bathroom": "ห้องน้ำ Penthouse Suite",
+      "suite-bath": "อ่างอาบน้ำและฝักบัวใน Penthouse Suite",
+      "king-red": "ห้อง Deluxe Double ที่โรงแรมบูติก the Fah สีลม กรุงเทพฯ",
+      "king-charcoal": "Deluxe Double ผ้าม่านสีเทาเข้ม",
+      "king-reverse": "Deluxe Double มุมมองไปทางประตู",
+      "king-bed": "เตียงใหญ่กว้าง 190 ซม. ใน Deluxe Double",
+      "king-bathroom": "ห้องน้ำใน Deluxe Double",
+      "twin-main": "Deluxe Twin พร้อมเตียงเดี่ยว 2 เตียง",
+      "twin-beds": "เตียงเดี่ยว 2 เตียง กว้าง 110 ซม. ใน Deluxe Twin",
+      "twin-beds-2": "Deluxe Twin อีกมุมหนึ่ง",
+      "twin-tv": "ทีวีและกระจกใน Deluxe Twin",
+      "twin-bathroom": "ห้องน้ำใน Deluxe Twin",
+      "cozy-bed": "Standard Double พร้อมเตียงกว้าง 160 ซม.",
+      "cozy-bed-2": "Standard Double อีกมุมหนึ่ง",
+      "cozy-window": "ผ้าม่านและทีวีใน Standard Double",
+      "cozy-bathroom": "ห้องน้ำใน Standard Double"
+    }
+  }
+}

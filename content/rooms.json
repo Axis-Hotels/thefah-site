@@ -1,0 +1,298 @@
+[
+  {
+    "id": "standard-double",
+    "size": 14.5,
+    "guests": 2,
+    "fits": [
+      "solo"
+    ],
+    "photos": [
+      "cozy-bed",
+      "cozy-bed-2",
+      "cozy-window",
+      "cozy-bathroom"
+    ],
+    "en": {
+      "name": "Standard Double",
+      "specs": "14.5 m² · Up to 2 guests · 1 double bed, 160 cm wide",
+      "text": "A compact room to settle into after a day out in Bangkok.",
+      "inroom_label": "In your room",
+      "inroom": "Air conditioning, free Wi-Fi, satellite TV, a kettle with tea and coffee, a safe and a hairdryer. Minibar or refrigerator.",
+      "outlook": "The window faces an internal ventilation shaft. This is a quieter choice than the street-facing rooms."
+    },
+    "ru": {
+      "name": "Standard Double",
+      "specs": "14,5 м² · до 2 гостей · 1 двуспальная кровать 160 см",
+      "text": "Компактный номер, где приятно отдохнуть после дня в Бангкоке.",
+      "inroom_label": "В номере",
+      "inroom": "Кондиционер, бесплатный Wi-Fi, спутниковое ТВ, чайник, чай и кофе, сейф и фен. Мини-бар или холодильник.",
+      "outlook": "Окно выходит во внутреннюю вентиляционную шахту. Здесь тише, чем в номерах со стороны улицы."
+    },
+    "th": {
+      "name": "Standard Double",
+      "specs": "14.5 ตร.ม. · สูงสุด 2 ท่าน · เตียงใหญ่ 1 เตียง กว้าง 160 ซม.",
+      "text": "ห้องพักขนาดกะทัดรัด เหมาะสำหรับกลับมาพักผ่อนหลังเที่ยวกรุงเทพฯ มาทั้งวัน",
+      "inroom_label": "ภายในห้อง",
+      "inroom": "เครื่องปรับอากาศ Wi-Fi ฟรี ทีวีพร้อมช่องดาวเทียม กาต้มน้ำพร้อมชาและกาแฟ ตู้เซฟ และไดร์เป่าผม พร้อมมินิบาร์หรือตู้เย็น",
+      "outlook": "หน้าต่างหันเข้าหาช่องระบายอากาศภายในอาคาร ห้องนี้จึงเงียบกว่าห้องฝั่งถนน"
+    },
+    "schema_beds": [
+      [
+        1,
+        "Double bed, 160 cm"
+      ]
+    ],
+    "schema_amenities": [
+      "Minibar or refrigerator"
+    ],
+    "exely_room": 5084381
+  },
+  {
+    "id": "deluxe-twin",
+    "size": 15,
+    "guests": 2,
+    "fits": [
+      "friends"
+    ],
+    "photos": [
+      "twin-main",
+      "twin-beds",
+      "twin-beds-2",
+      "twin-tv",
+      "twin-bathroom"
+    ],
+    "en": {
+      "name": "Deluxe Twin",
+      "specs": "15 m² · Up to 2 guests · 2 single beds, each 110 cm wide",
+      "text": "A cosy room with two single beds.",
+      "inroom_label": "In your room",
+      "inroom": "Air conditioning, free Wi-Fi, satellite TV, a kettle with tea and coffee, a safe and a hairdryer. Minibar or refrigerator.",
+      "outlook": "The room faces the street on the hotel entrance side. The façade partly screens the view."
+    },
+    "ru": {
+      "name": "Deluxe Twin",
+      "specs": "15 м² · до 2 гостей · 2 односпальные кровати по 110 см",
+      "text": "Уютный номер с двумя раздельными кроватями.",
+      "inroom_label": "В номере",
+      "inroom": "Кондиционер, бесплатный Wi-Fi, спутниковое ТВ, чайник, чай и кофе, сейф и фен. Мини-бар или холодильник.",
+      "outlook": "Номер выходит на улицу со стороны входа. Фасад частично закрывает обзор."
+    },
+    "th": {
+      "name": "Deluxe Twin",
+      "specs": "15 ตร.ม. · สูงสุด 2 ท่าน · เตียงเดี่ยว 2 เตียง กว้างเตียงละ 110 ซม.",
+      "text": "ห้องพักแสนสบายพร้อมเตียงเดี่ยว 2 เตียง",
+      "inroom_label": "ภายในห้อง",
+      "inroom": "เครื่องปรับอากาศ Wi-Fi ฟรี ทีวีพร้อมช่องดาวเทียม กาต้มน้ำพร้อมชาและกาแฟ ตู้เซฟ และไดร์เป่าผม พร้อมมินิบาร์หรือตู้เย็น",
+      "outlook": "ห้องอยู่ฝั่งถนนด้านทางเข้าโรงแรม โดยมีส่วนหน้าของอาคารบังวิวบางส่วน"
+    },
+    "schema_beds": [
+      [
+        2,
+        "Single bed, 110 cm"
+      ]
+    ],
+    "schema_amenities": [
+      "Minibar or refrigerator"
+    ],
+    "exely_room": 5084378
+  },
+  {
+    "id": "deluxe-double",
+    "size": 15,
+    "guests": 2,
+    "fits": [
+      "couple"
+    ],
+    "photos": [
+      "king-red",
+      "king-charcoal",
+      "king-reverse",
+      "king-bed",
+      "king-bathroom"
+    ],
+    "en": {
+      "name": "Deluxe Double",
+      "specs": "15 m² · Up to 2 guests · 1 double bed, 190 cm wide",
+      "text": "A wide double bed and a cosy setting make this a comfortable choice for a stay for two.",
+      "inroom_label": "In your room",
+      "inroom": "Air conditioning, free Wi-Fi, satellite TV, a kettle with tea and coffee, a safe and a hairdryer. Minibar or refrigerator.",
+      "outlook": "Some rooms face the street, with views partly screened by the façade. Others face a neighbouring construction site."
+    },
+    "ru": {
+      "name": "Deluxe Double",
+      "specs": "15 м² · до 2 гостей · 1 двуспальная кровать 190 см",
+      "text": "Широкая двуспальная кровать и уютная обстановка для комфортной поездки вдвоём.",
+      "inroom_label": "В номере",
+      "inroom": "Кондиционер, бесплатный Wi-Fi, спутниковое ТВ, чайник, чай и кофе, сейф и фен. Мини-бар или холодильник.",
+      "outlook": "Часть номеров выходит на улицу с ограниченным обзором, остальные — в сторону стройплощадки."
+    },
+    "th": {
+      "name": "Deluxe Double",
+      "specs": "15 ตร.ม. · สูงสุด 2 ท่าน · เตียงใหญ่ 1 เตียง กว้าง 190 ซม.",
+      "text": "ห้องพักบรรยากาศอบอุ่นพร้อมเตียงใหญ่กว้าง นอนสบายสำหรับทริปสองคน",
+      "inroom_label": "ภายในห้อง",
+      "inroom": "เครื่องปรับอากาศ Wi-Fi ฟรี ทีวีพร้อมช่องดาวเทียม กาต้มน้ำพร้อมชาและกาแฟ ตู้เซฟ และไดร์เป่าผม พร้อมมินิบาร์หรือตู้เย็น",
+      "outlook": "บางห้องหันออกฝั่งถนนและมีส่วนหน้าของอาคารบังวิวบางส่วน ห้องอื่น ๆ หันไปทางพื้นที่ก่อสร้างข้างโรงแรม"
+    },
+    "schema_beds": [
+      [
+        1,
+        "Double bed, 190 cm"
+      ]
+    ],
+    "schema_amenities": [
+      "Minibar or refrigerator"
+    ],
+    "exely_room": 5084379
+  },
+  {
+    "id": "penthouse-suite",
+    "size": 44.6,
+    "guests": 2,
+    "fits": [
+      "occasion"
+    ],
+    "photos": [
+      "suite-bedroom",
+      "suite-living",
+      "suite-living-2",
+      "suite-bathroom",
+      "suite-bath"
+    ],
+    "en": {
+      "name": "Penthouse Suite",
+      "specs": "44.6 m² · Up to 2 guests · 1 double bed",
+      "text": "Take your time over breakfast in your own kitchen or unwind on your private balcony. The suite also has a sofa, a bathtub and a shower.",
+      "inroom_label": "In your room",
+      "inroom": "Air conditioning, free Wi-Fi, satellite TV, a kettle with tea and coffee, a safe and a hairdryer.",
+      "outlook": "The balcony looks out over the city, with a neighbouring construction site also in view."
+    },
+    "ru": {
+      "name": "Penthouse Suite",
+      "specs": "44,6 м² · до 2 гостей · 1 двуспальная кровать",
+      "text": "Пентхаус для неспешных завтраков на своей кухне и отдыха на собственном балконе. Внутри есть диван, ванна и душ.",
+      "inroom_label": "В номере",
+      "inroom": "Кондиционер, бесплатный Wi-Fi, спутниковое ТВ, чайник, чай и кофе, сейф и фен.",
+      "outlook": "С балкона видно город и соседнюю стройплощадку."
+    },
+    "th": {
+      "name": "Penthouse Suite",
+      "specs": "44.6 ตร.ม. · สูงสุด 2 ท่าน · เตียงใหญ่ 1 เตียง",
+      "text": "ค่อย ๆ ทานมื้อเช้าในครัวส่วนตัว หรือนั่งพักที่ระเบียงของคุณ ภายในห้องมีโซฟา อ่างอาบน้ำ และฝักบัว",
+      "inroom_label": "ภายในห้อง",
+      "inroom": "เครื่องปรับอากาศ Wi-Fi ฟรี ทีวีพร้อมช่องดาวเทียม กาต้มน้ำพร้อมชาและกาแฟ ตู้เซฟ และไดร์เป่าผม",
+      "outlook": "จากระเบียงมองเห็นตัวเมืองและพื้นที่ก่อสร้างข้างโรงแรม"
+    },
+    "schema_beds": [
+      [
+        1,
+        "Double bed"
+      ]
+    ],
+    "schema_amenities": [
+      "Kitchen",
+      "Private balcony",
+      "Bathtub",
+      "Sofa"
+    ],
+    "exely_room": 5084380
+  },
+  {
+    "id": "two-bedroom-deluxe",
+    "size": 32,
+    "guests": 4,
+    "bedrooms": 2,
+    "fits": [
+      "family"
+    ],
+    "photos": [],
+    "en": {
+      "name": "Two-bedroom Deluxe",
+      "specs": "32 m² · Up to 4 guests · 2 bedrooms",
+      "text": "A two-bedroom family room with space to unwind together and a separate room to retire to. Two double beds, or one double bed and two single beds. Rooms 204–205 have two double beds, each 190 cm wide.",
+      "inroom_label": "In each room",
+      "inroom": "Air conditioning, free Wi-Fi, satellite TV, a kettle with tea and coffee, a safe and a hairdryer. Minibar or refrigerator.",
+      "outlook": ""
+    },
+    "ru": {
+      "name": "Two-bedroom Deluxe",
+      "specs": "32 м² · до 4 гостей · 2 спальни",
+      "text": "Семейный номер с двумя спальнями, где удобно отдыхать вместе и у каждого есть личное пространство. Две двуспальные кровати или одна двуспальная и две односпальные. В номерах 204–205 две двуспальные кровати по 190 см.",
+      "inroom_label": "В каждой комнате",
+      "inroom": "Кондиционер, бесплатный Wi-Fi, спутниковое ТВ, чайник, чай и кофе, сейф и фен. Мини-бар или холодильник.",
+      "outlook": ""
+    },
+    "th": {
+      "name": "Two-bedroom Deluxe",
+      "specs": "32 ตร.ม. · สูงสุด 4 ท่าน · 2 ห้องนอน",
+      "text": "ห้องพักสำหรับครอบครัวพร้อม 2 ห้องนอน เหมาะกับการใช้เวลาด้วยกันและยังมีพื้นที่ส่วนตัว มีเตียงใหญ่ 2 เตียง หรือเตียงใหญ่ 1 เตียงกับเตียงเดี่ยว 2 เตียง ห้อง 204–205 มีเตียงใหญ่ 2 เตียง กว้างเตียงละ 190 ซม.",
+      "inroom_label": "ภายในแต่ละห้อง",
+      "inroom": "เครื่องปรับอากาศ Wi-Fi ฟรี ทีวีพร้อมช่องดาวเทียม กาต้มน้ำพร้อมชาและกาแฟ ตู้เซฟ และไดร์เป่าผม พร้อมมินิบาร์หรือตู้เย็น",
+      "outlook": ""
+    },
+    "schema_beds": [
+      [
+        2,
+        "Double bed"
+      ]
+    ],
+    "schema_amenities": [
+      "Minibar or refrigerator",
+      "Two bedrooms"
+    ],
+    "exely_room": 5085025
+  },
+  {
+    "id": "three-bedroom-deluxe",
+    "size": 46,
+    "guests": 6,
+    "bedrooms": 3,
+    "fits": [
+      "family"
+    ],
+    "photos": [],
+    "en": {
+      "name": "Three-bedroom Deluxe",
+      "specs": "46 m² · Up to 6 guests · 3 bedrooms",
+      "text": "A comfortable choice when the whole family is coming to Bangkok, with three separate bedrooms. Two bedrooms have double beds, one 190 cm wide and one 160 cm wide. The third has two single beds, each 110 cm wide.",
+      "inroom_label": "In each room",
+      "inroom": "Air conditioning, free Wi-Fi, satellite TV, a kettle with tea and coffee, a safe and a hairdryer. Minibar or refrigerator.",
+      "outlook": ""
+    },
+    "ru": {
+      "name": "Three-bedroom Deluxe",
+      "specs": "46 м² · до 6 гостей · 3 спальни",
+      "text": "Семейный номер с тремя отдельными спальнями. Удобно, когда в Бангкок едет вся семья. Две двуспальные кровати шириной 190 и 160 см в отдельных спальнях. В третьей спальне две односпальные кровати по 110 см.",
+      "inroom_label": "В каждой комнате",
+      "inroom": "Кондиционер, бесплатный Wi-Fi, спутниковое ТВ, чайник, чай и кофе, сейф и фен. Мини-бар или холодильник.",
+      "outlook": ""
+    },
+    "th": {
+      "name": "Three-bedroom Deluxe",
+      "specs": "46 ตร.ม. · สูงสุด 6 ท่าน · 3 ห้องนอน",
+      "text": "ห้องพักสำหรับครอบครัวพร้อม 3 ห้องนอนแยกกัน เหมาะสำหรับทริปกรุงเทพฯ ที่มากันทั้งครอบครัว สองห้องมีเตียงใหญ่กว้าง 190 ซม. และ 160 ซม. ตามลำดับ อีกห้องมีเตียงเดี่ยว 2 เตียง กว้างเตียงละ 110 ซม.",
+      "inroom_label": "ภายในแต่ละห้อง",
+      "inroom": "เครื่องปรับอากาศ Wi-Fi ฟรี ทีวีพร้อมช่องดาวเทียม กาต้มน้ำพร้อมชาและกาแฟ ตู้เซฟ และไดร์เป่าผม พร้อมมินิบาร์หรือตู้เย็น",
+      "outlook": ""
+    },
+    "schema_beds": [
+      [
+        1,
+        "Double bed, 190 cm"
+      ],
+      [
+        1,
+        "Double bed, 160 cm"
+      ],
+      [
+        2,
+        "Single bed, 110 cm"
+      ]
+    ],
+    "schema_amenities": [
+      "Minibar or refrigerator",
+      "Three bedrooms"
+    ],
+    "exely_room": 5085027
+  }
+]

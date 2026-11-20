@@ -73,32 +73,9 @@
 .fah-chip input { position: absolute; opacity: 0; pointer-events: none; }
 
 /* header */
-.fah-header { position: fixed; top: 0; left: 0; right: 0; z-index: 60; padding-top: env(safe-area-inset-top, 0px); color: var(--hero-fg); transition: background .35s, color .35s, box-shadow .35s, transform .35s var(--ease); }
-.fah-header.is-solid { background: rgba(247, 244, 238, .92); color: var(--navy); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--line); }
-.fah-header.is-hidden { transform: translateY(-100%); }
-.fah-header__row { display: flex; align-items: center; gap: 28px; height: var(--header); transition: height .35s; }
-.fah-header.is-solid .fah-header__row { height: 68px; }
-.fah-logo-h { display: block; height: 50px; width: auto; transition: height .35s; }
-.fah-header.is-solid .fah-logo-h { height: 42px; }
-.fah-header__logo { transition: opacity .35s, transform .35s var(--ease); }
-.fah-header:not(.is-solid):not(.is-menu) .fah-header__logo { opacity: 0; transform: translateY(-6px); pointer-events: none; }
-.fah-menu { margin-left: auto; }
-.fah-menu ul { display: flex; gap: 30px; }
-.fah-menu a { font-size: 15px; font-weight: 500; position: relative; padding: 6px 0; }
-.fah-menu a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform .35s var(--ease); }
-.fah-menu a:hover::after { transform: scaleX(1); transform-origin: left; }
-.fah-header__end { display: flex; align-items: center; gap: 18px; }
 .fah-langs { display: flex; gap: 4px; font-size: 13px; font-weight: 600; letter-spacing: .06em; }
 .fah-langs a { padding: 4px 6px; opacity: .55; transition: opacity .2s; }
 .fah-langs a[aria-current], .fah-langs a:hover { opacity: 1; }
-.fah-langs--menu { display: none; }
-.fah-header__book { min-height: 44px; padding: 0 22px; }
-.fah-burger { display: none; width: 44px; height: 44px; position: relative; }
-.fah-burger span { position: absolute; left: 11px; right: 11px; height: 1.5px; background: currentColor; transition: transform .3s, top .3s; }
-.fah-burger span:first-child { top: 17px; }
-.fah-burger span:last-child { top: 26px; }
-.fah-burger[aria-expanded="true"] span:first-child { top: 21px; transform: rotate(45deg); }
-.fah-burger[aria-expanded="true"] span:last-child { top: 21px; transform: rotate(-45deg); }
 
 /* sky */
 .fah-sky { position: absolute; inset: 0; background: linear-gradient(180deg, var(--sky1) 0%, var(--sky2) 55%, var(--sky3) 100%); transition: background 1.2s; overflow: hidden; }
@@ -127,10 +104,10 @@
 @keyframes fah-blink { 0%, 100% { opacity: calc(var(--lights) * .9); } 40% { opacity: 0; } 70% { opacity: calc(var(--lights) * .6); } }
 
 /* hero */
-.fah-hero { position: relative; min-height: max(720px, 100svh); color: var(--hero-fg); display: flex; align-items: center; isolation: isolate; transition: color 1.2s; }
+.fah-hero { position: relative; min-height: max(680px, calc(100svh - 68px)); color: var(--hero-fg); display: flex; align-items: center; isolation: isolate; transition: color 1.2s; }
 .fah-hero > .fah-city { z-index: 1; }
 .fah-hero__grid { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(32px, 5vw, 80px); align-items: center;
-  padding-top: calc(var(--header) + 32px); padding-bottom: 72px; }
+  padding-top: 56px; padding-bottom: 72px; }
 .fah-hero__logo { width: clamp(150px, 15vw, 210px); margin-bottom: 30px; }
 .fah-hero__logo svg { width: 100%; height: auto; display: block; }
 .fah-hero .fah-eyebrow { color: inherit; opacity: .8; }
@@ -587,28 +564,14 @@
 .fah.is-js .fah-reveal.is-in { opacity: 1; transform: none; }
 
 @media (max-width: 1100px) {
-  .fah-menu ul { gap: 20px; }
-  .fah-header__end .fah-langs { display: none; }
   .fah-room__info { grid-template-columns: 1fr; }
   .fah-room__text, .fah-room__hl, .fah-room__info .fah-btn { grid-column: 1; grid-row: auto; }
 }
 
 @media (max-width: 900px) {
   .fah { font-size: 16px; --header: 68px; }
-  .fah-logo-h, .fah-header.is-solid .fah-logo-h { height: 40px; }
-  .fah-header.is-solid .fah-header__row { height: 64px; }
-  .fah-burger { display: block; }
-  .fah-header__book { display: none; }
-  .fah-menu { position: fixed; inset: 0; z-index: -1; background: var(--navy); color: var(--ivory); display: flex; flex-direction: column; justify-content: center; padding: 96px 28px 40px;
-    opacity: 0; visibility: hidden; transition: opacity .35s, visibility .35s; }
-  .fah-menu.is-open { opacity: 1; visibility: visible; }
-  .fah-menu ul { flex-direction: column; gap: 4px; }
-  .fah-menu a { font: 300 38px/1.3 var(--display); }
-  .fah-langs--menu { display: flex; margin-top: 32px; font-size: 16px; }
-  .fah-header.is-menu { color: var(--ivory); background: transparent; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
-  .fah-header__end { margin-left: auto; }
   .fah-hero { min-height: auto; }
-  .fah-hero__grid { padding-top: calc(var(--header) + 28px); padding-bottom: 200px; gap: 48px; }
+  .fah-hero__grid { padding-top: 40px; padding-bottom: 200px; gap: 48px; }
   .fah-hero__logo { width: 150px; margin-bottom: 22px; }
   .fah-hero__visual { justify-self: center; max-width: 380px; }
   .fah-dial { left: 12px; right: 12px; }

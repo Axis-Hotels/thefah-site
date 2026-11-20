@@ -618,3 +618,10 @@
   .fah *, .fah *::before, .fah *::after { animation: none !important; transition: none !important; }
   .fah.is-js .fah-intro__text span { opacity: 1; }
 }
+
+/* phones: the site's Tilda menu is fixed over the top of the page (fah.js measures it into --site-menu),
+   so the hero starts below it; the hotel logo is a little smaller there */
+@media (max-width: 900px) {
+  .fah .fah-hero__grid { padding-top: calc(var(--site-menu, 72px) + 24px); }
+  .fah .fah-hero__logo { width: 116px; }
+}

@@ -12,9 +12,9 @@
   "_asset_base": "Public address of the docs/ folder on GitHub Pages, without a trailing slash, e.g. https://axis-hotels.github.io/thefah-site. Photos for the Tilda pages load from here.",
   "site_origin": "https://axis-hotels.com",
   "pages": {
-    "en": "/en/the-fah",
-    "ru": "/ru/the-fah",
-    "th": "/th/the-fah"
+    "en": "/fah",
+    "ru": "/fah/ru",
+    "th": "/fah/th"
   },
   "address_line": "128/10–11 Soi Silom 6, Silom Road, Suriya Wong, Bang Rak, Bangkok 10500, Thailand",
   "map_query": "The FAH Silom, 128/10-11 Soi Silom 6, Bang Rak, Bangkok 10500",

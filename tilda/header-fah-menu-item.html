@@ -3,6 +3,10 @@
 <script id="axis-fah-menu-item">
 (function () {
   var LABEL = 'the Fah by Axis.Bangkok';
+  /* the hotel's pages: English is the main one */
+  var PAGES = { en: '/fah', ru: '/fah/ru', th: '/fah/th' };
+  function isFah(a) { return /^(?:https?:\/\/[^\/]+)?\/(?:fah(?:\/(?:ru|th))?|(?:ru|en|th)\/the-fah)\/?(?:[?#].*)?$/.test(a.getAttribute('href') || ''); }
+  function hasFah(el) { return Array.prototype.some.call(el.querySelectorAll('a'), isFah); }
   /* the page's own language first (some menu copies link Chess in another language), then the Chess link's */
   function langOf(href) {
     var m = location.pathname.match(/^\/(?:bangkok\/)?(ru|en|th)(?:\/|$)/);
@@ -14,13 +18,13 @@
   function add() {
     /* Tilda menu blocks (T1272 and other ME blocks): one <li> per hotel */
     Array.prototype.forEach.call(document.querySelectorAll('ul.t-menusub__list'), function (list) {
-      if (list.querySelector('a[href*="/the-fah"]')) return;
+      if (hasFah(list)) return;
       var chess = Array.prototype.filter.call(list.querySelectorAll('a'), isChess)[0];
       if (!chess) return;
       var item = chess.closest('li') || chess;
       var copy = item.cloneNode(true);
       var link = copy.tagName === 'A' ? copy : copy.querySelector('a');
-      link.setAttribute('href', '/' + langOf(chess.getAttribute('href')) + '/the-fah');
+      link.setAttribute('href', PAGES[langOf(chess.getAttribute('href'))]);
       link.textContent = LABEL;
       link.removeAttribute('aria-current');
       link.classList.remove('t-active', 't-menu__link-item_active');
@@ -32,13 +36,13 @@
       var chess = sub.querySelector('#axg-bkk2') || Array.prototype.filter.call(sub.querySelectorAll('a'), isChess)[0];
       var a = sub.querySelector('#axg-fah');
       if (!a) {
-        if (sub.querySelector('a[href*="/the-fah"]')) return;
+        if (hasFah(sub)) return;
         a = document.createElement('a');
         a.id = 'axg-fah';
         a.textContent = LABEL;
         if (chess && chess.nextSibling) sub.insertBefore(a, chess.nextSibling); else sub.appendChild(a);
       }
-      a.setAttribute('href', '/' + langOf(chess ? chess.getAttribute('href') : '') + '/the-fah');
+      a.setAttribute('href', PAGES[langOf(chess ? chess.getAttribute('href') : '')]);
     });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', add); else add();

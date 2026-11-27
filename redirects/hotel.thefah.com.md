@@ -1,56 +1,43 @@
 # Переадресация со старого сайта hotel.thefah.com
 
-hotel.thefah.com был собственным англоязычным сайтом отеля (2016–2021). DNS домена указывает на сервер
-**ai-cz-01** (85.137.166.131). Настройки nginx для этого сервера живут не здесь, а в репозитории
-**Axis-Hotels/axis-infrastructure**: плейбук `playbooks/fah-placeholder.yml`, шаблон
-`roles/axis_ai_nginx/templates/fah-placeholder.conf.j2`, тесты `tests/test_fah_redirect.py`.
+hotel.thefah.com был собственным англоязычным сайтом отеля (2016–2021). Теперь у the Fah три адреса,
+язык первым, как у всего axis-hotels.com:
 
-Сейчас в axis-infrastructure любой старый адрес ведёт на начало https://axis-hotels.com/en/fah.
-Патч `axis-infrastructure-fah-sections.patch` ведёт каждую старую страницу в её раздел:
+- https://axis-hotels.com/en/fah — английский, основной;
+- https://axis-hotels.com/ru/fah — русский;
+- https://axis-hotels.com/th/fah — тайский.
 
-| Старый адрес на hotel.thefah.com | Куда ведёт |
-|---|---|
-| `/`, `/index.html`, `/home`, любой неизвестный адрес | `/en/fah` |
-| `/accommodation.html`, `/accomodation`, `/gallery.html`, `/gallary` | `/en/fah#fah-rooms` |
-| `/gallery_content.html?gallery=superior-double-bed-picture` | `/en/fah#fah-standard-double` |
-| `/gallery_content.html?gallery=deluxe-twin-picture` | `/en/fah#fah-deluxe-twin` |
-| `/gallery_content.html?gallery=deluxe-kingsize-picture` | `/en/fah#fah-deluxe-double` |
-| `/gallery_content.html?gallery=penthouse-picture` | `/en/fah#fah-penthouse-suite` |
-| `/gallery_content.html?gallery=hotel-picture` | `/en/fah#fah-hotel` |
-| `/facilities.html`, `/facilities` | `/en/fah#fah-hotel` |
-| `/contact.html`, `/contactus` | `/en/fah#fah-contacts` |
-| `/promotion.html`, `/promotion`, `/specialoffer/…` | `/en/bangkok/booking?hotel_id=515836` |
-| `/ru/…`, `/th/…` | `/ru/fah`, `/th/fah` |
+Отдельных адресов для разделов нет. Старый сайт был только на английском, поэтому **любая** его ссылка
+(главная, номера, галерея, контакты, акции, любой другой путь, по http и https) ведёт на
+https://axis-hotels.com/en/fah с кодом 308.
 
-Все адреса старого сайта взяты из веб-архива. Ответ — 308, по http и https; проверка сертификатов
-(`/.well-known/acme-challenge/`) и заглушка fah.axis-hotels.com не меняются.
+## Где это настроено
 
-## Что сделать (нужен доступ на запись в axis-infrastructure и к серверу автоматизации)
+DNS hotel.thefah.com указывает на сервер **ai-cz-01** (85.137.166.131). Его nginx настраивается не из этого
+репозитория, а из **Axis-Hotels/axis-infrastructure**: плейбук `playbooks/fah-placeholder.yml`, шаблон
+`roles/axis_ai_nginx/templates/fah-placeholder.conf.j2`, тесты `tests/test_fah_redirect.py`. Там уже ровно
+такое правило — `location / { return 308 https://axis-hotels.com/en/fah; }` для http и https; менять в
+axis-infrastructure ничего не нужно.
 
-1. Применить патч в своей копии axis-infrastructure и открыть pull request:
+## Что сделать (нужен доступ к серверу автоматизации)
 
-   ```bash
-   git checkout -b fah-hotel-redirect-sections origin/main
-   git am /путь/к/axis-infrastructure-fah-sections.patch
-   git push -u origin fah-hotel-redirect-sections
-   ```
+На automation-mow-01 в обновлённом `/opt/axis/axis-infrastructure`:
 
-   Патч сделан от `main` = `28a8569`. В нём: шаблон nginx с картами адресов, шесть новых проверок
-   разделов в плейбуке (http и https, с откатом при ошибке), тесты на все архивные адреса и проверка
-   на настоящем nginx в CI (`tests/verify_fah_hotel_redirect.py`). Юнит-тесты локально проходят
-   (7 из 7); проверку на nginx выполнит CI.
+```bash
+scripts/ansible-container ansible-playbook playbooks/fah-placeholder.yml --check --diff --limit ai-cz-01
+```
 
-2. После слияния — шаги из сообщения бота: на automation-mow-01 в обновлённом `/opt/axis/axis-infrastructure`
+посмотреть diff и затем применить:
 
-   ```bash
-   scripts/ansible-container ansible-playbook playbooks/fah-placeholder.yml --check --diff --limit ai-cz-01
-   ```
+```bash
+scripts/ansible-container ansible-playbook playbooks/fah-placeholder.yml --limit ai-cz-01
+```
 
-   посмотреть diff (меняется только блок hotel.thefah.com, заглушка fah.axis-hotels.com — нет) и затем
+На сервере должны быть сертификаты `fah.axis-hotels.com` и `hotel.thefah.com`, иначе плейбук остановится
+до изменений. После установки он сам проверяет nginx, переадресацию http/https на `/en/fah` и то, что
+https://axis-hotels.com/en/fah открывается с кодом 200; при ошибке возвращает прежние настройки.
 
-   ```bash
-   scripts/ansible-container ansible-playbook playbooks/fah-placeholder.yml --limit ai-cz-01
-   ```
+## Старые адреса на самом axis-hotels.com
 
-   На сервере должны быть сертификаты `fah.axis-hotels.com` и `hotel.thefah.com`, иначе плейбук
-   остановится до изменений.
+См. `tilda-old-addresses.md`: `/fah`, `/en/the-fah` → `/en/fah`; `/fah/ru`, `/ru/the-fah` → `/ru/fah`;
+`/fah/th`, `/th/the-fah` → `/th/fah`.

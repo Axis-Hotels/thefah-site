@@ -40,7 +40,7 @@
 </p>
 ```
 
-Старый сайт hotel.thefah.com переадресуется на сервере — см. `hotel.thefah.com.conf` (всё ведёт на `/en/fah`).
+Старый сайт hotel.thefah.com переадресуется на сервере ai-cz-01 из репозитория axis-infrastructure — см. `hotel.thefah.com.md`.
 
 ## Общая шапка сайта (страница Header, 5-й блок)
 

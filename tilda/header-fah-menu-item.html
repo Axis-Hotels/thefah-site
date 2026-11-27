@@ -3,9 +3,9 @@
 <script id="axis-fah-menu-item">
 (function () {
   var LABEL = 'the Fah by Axis.Bangkok';
-  /* the hotel's pages: English is the main one */
-  var PAGES = { en: '/fah', ru: '/fah/ru', th: '/fah/th' };
-  function isFah(a) { return /^(?:https?:\/\/[^\/]+)?\/(?:fah(?:\/(?:ru|th))?|(?:ru|en|th)\/the-fah)\/?(?:[?#].*)?$/.test(a.getAttribute('href') || ''); }
+  /* the hotel's pages, language first like the rest of the site */
+  var PAGES = { en: '/en/fah', ru: '/ru/fah', th: '/th/fah' };
+  function isFah(a) { return /^(?:https?:\/\/[^\/]+)?\/(?:(?:ru|en|th)\/(?:fah|the-fah)|fah(?:\/(?:ru|th))?)\/?(?:[?#].*)?$/.test(a.getAttribute('href') || ''); }
   function hasFah(el) { return Array.prototype.some.call(el.querySelectorAll('a'), isFah); }
   /* the page's own language first (some menu copies link Chess in another language), then the Chess link's */
   function langOf(href) {
